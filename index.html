@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+
+	<!-- Jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	<script type="text/javascript" src="game.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		
+		<!-- ================================== -->
+		<!-- =============ROW 1 =============== -->
+		<div class="row">
+			
+			<div class='col-lg-8'>
+				<h1>Trivia Game</h1>
+			</div>
+			
+
+			<!-- ======================================== -->
+			<!-- =======  Timer Display =================-->
+			<div class="col-lg-4">
+				Timer: <span id="timerDisplay"></span>
+			</div>
+		</div> <!-- Row 1 Closure -->
+
+
+		<!-- ================================== -->
+		<!-- =============ROW 2 =============== -->
+		<div id="gameDisplay" class="row well well-lg">
+			
+			<!-- Question 1 ============================= -->
+			<p class="questionHead">Question 1</p>
+			
+			<!-- ========== Begin Quiz ============= -->
+			<form class="question" name="quiz" action="">
+ 	 			
+				<!--Question 1 ===========================-->
+ 	 			 <input type="radio" name="question1" value="Correct"> Correct<br>
+ 				 <input type="radio" name="question1" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question1" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question1" value="Incorrect"> Incorrect<br>
+			
+
+				<!-- Question 2 ============================= -->
+				<p class="questionHead">Question 2</p>
+			
+ 	 			 <input type="radio" name="question2" value="Correct"> Correct<br>
+ 				 <input type="radio" name="question2" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question2" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question2" value="Incorrect"> Incorrect<br>
+			
+				<!-- Question 3 ============================= -->
+				<p class="questionHead">Question 3</p>
+			
+ 	 			 <input type="radio" name="question3" value="Correct"> Correct<br>
+ 				 <input type="radio" name="question3" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question3" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question3" value="Incorrect"> Incorrect<br>
+				 <br>
+				 <br>
+				<!-- Submit Button ======================-->
+				<input id="button" value="All Done!" onclick="checkAnswer();">
+			</form>
+		
+		</div> <!-- Row 2 Closure =========================== -->
+
+		<div class="row">
+			<span id="results"></span>
+		</div>
+	
+
+
+
+
+	</div> <!-- Container Closure -->
+</body>
+</html>
+
+
+
