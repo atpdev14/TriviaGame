@@ -1,17 +1,66 @@
-h1 {
-	text-align: center;
-	text-decoration: underline;
+/*==============================================
+================= TRIVIA GAME =================
+==============================================*/
+body {
+	background: cover;
+	background-attachment: fixed;
 }
 
-#gameDisplay {
-	width: 80%;
+h1, #timerDiv {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin-left: 390px;
 	background: lightgrey;
-	margin: auto;
 	border-style: solid;
 	border-width: 3px;
 	border-color: grey;
 }
 
+
+
+#gameDisplay, #resultsDiv {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 80%;
+	background: lightgrey;
+	margin: auto;
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: grey;
+	box-shadow: 14px 14px 58px 8px #878787;
+}
+
+#audioPlayer {
+	position: relative;
+	left: -68px;
+}
+
+#resultsDiv {
+	height: 45px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#results {
+	margin: auto;
+	font-size: 25px;
+}
+
 .questionHead {
 	font-size: 20px;
 }
+
+#timerDiv {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	font-size: 25px;
+}
+
+#button {
+	text-align: center;
+	position: relative;
+	left: 362px;
+}
+
+

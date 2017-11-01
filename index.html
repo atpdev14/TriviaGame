@@ -1,7 +1,13 @@
+<!-- ==============================================
+================= TRIVIA GAME =================
+============================================== -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Trivia Game</title>
 
 	<!-- Bootstrap -->
@@ -13,11 +19,21 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 
+	<!-- Javascript -->
 	<script type="text/javascript" src="game.js"></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
-<body>
+<body background="assets/images/banana_background.jpg">
 	<div class="container">
+
+		
+		<!-- ======= Audio Player ===== -->
+		<audio id="audioPlayer" controls>
+  			<source id="onMyRadio" src="assets/on_my_radio.mp3" type="audio/mp3">
+		</audio>
 		
 		<!-- ================================== -->
 		<!-- =============ROW 1 =============== -->
@@ -30,7 +46,7 @@
 
 			<!-- ======================================== -->
 			<!-- =======  Timer Display =================-->
-			<div class="col-lg-4">
+			<div id="timerDiv" class="col-lg-4">
 				Timer: <span id="timerDisplay"></span>
 			</div>
 		</div> <!-- Row 1 Closure -->
@@ -52,7 +68,7 @@
  				 <input type="radio" name="question1" value="Incorrect"> Incorrect<br>
  				 <input type="radio" name="question1" value="Incorrect"> Incorrect<br>
 			
-
+				<br>
 				<!-- Question 2 ============================= -->
 				<p class="questionHead">Question 2</p>
 			
@@ -61,6 +77,8 @@
  				 <input type="radio" name="question2" value="Incorrect"> Incorrect<br>
  				 <input type="radio" name="question2" value="Incorrect"> Incorrect<br>
 			
+				
+				<br>
 				<!-- Question 3 ============================= -->
 				<p class="questionHead">Question 3</p>
 			
@@ -68,6 +86,77 @@
  				 <input type="radio" name="question3" value="Incorrect"> Incorrect<br>
  				 <input type="radio" name="question3" value="Incorrect"> Incorrect<br>
  				 <input type="radio" name="question3" value="Incorrect"> Incorrect<br>
+
+
+ 				<br>
+ 				<!-- Question 4 ============================= -->
+				<p class="questionHead">Question 4</p>
+			
+ 	 			<input type="radio" name="question4" value="Correct"> Correct<br>
+ 				<input type="radio" name="question4" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question4" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question4" value="Incorrect"> Incorrect<br>
+
+
+ 				<br>
+ 				<!-- Question 5 ============================= -->
+				<p class="questionHead">Question 5</p>
+			
+ 	 			<input type="radio" name="question5" value="Correct"> Correct<br>
+ 				<input type="radio" name="question5" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question5" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question5" value="Incorrect"> Incorrect<br>
+
+
+ 				<br> 
+ 				<!-- Question 6 ============================= -->
+				<p class="questionHead">Question 6</p>
+			
+ 	 			<input type="radio" name="question6" value="Correct"> Correct<br>
+ 				<input type="radio" name="question6" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question6" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question6" value="Incorrect"> Incorrect<br>
+
+
+ 				<br>
+ 				<!-- Question 7 ============================= -->
+				<p class="questionHead">Question 7</p>
+			
+ 	 			<input type="radio" name="question7" value="Correct"> Correct<br>
+ 				<input type="radio" name="question7" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question7" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question7" value="Incorrect"> Incorrect<br>
+
+
+ 				<br>
+ 				<!-- Question 8 ============================= -->
+				<p class="questionHead">Question 8</p>
+			
+ 	 			<input type="radio" name="question8" value="Correct"> Correct<br>
+ 				<input type="radio" name="question8" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question8" value="Incorrect"> Incorrect<br>
+ 				<input type="radio" name="question8" value="Incorrect"> Incorrect<br>
+
+
+ 				<br>
+ 				<!-- Question 9 ============================= -->
+				<p class="questionHead">Question 9</p>
+			
+ 	 			 <input type="radio" name="question9" value="Correct"> Correct<br>
+ 				 <input type="radio" name="question9" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question9" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question9" value="Incorrect"> Incorrect<br>
+
+				
+				<br>
+ 				 <!-- Question 10 ============================= -->
+				<p class="questionHead">Question 10</p>
+			
+ 	 			 <input type="radio" name="question10" value="Correct"> Correct<br>
+ 				 <input type="radio" name="question10" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question10" value="Incorrect"> Incorrect<br>
+ 				 <input type="radio" name="question10" value="Incorrect"> Incorrect<br>
+
 				 <br>
 				 <br>
 				<!-- Submit Button ======================-->
@@ -76,7 +165,7 @@
 		
 		</div> <!-- Row 2 Closure =========================== -->
 
-		<div class="row">
+		<div id="resultsDiv" class="row">
 			<span id="results"></span>
 		</div>
 	
