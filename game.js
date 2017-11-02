@@ -1,4 +1,4 @@
-var timer = 90;
+var timer = 180;
 var intervalId;
 var onMyRadio = document.getElementById(onMyRadio);
 
@@ -16,6 +16,11 @@ function run() {
       }
     }
 
+    $("#resultsDiv").hide();
+    $("#button").click($(
+      "#resultsDiv").slideDown()
+    );
+
     function checkAnswer() {
     clearInterval(intervalId);
     
@@ -31,25 +36,25 @@ function run() {
      var question10 = document.quiz.question10.value;
      var correctAnswers = 0;
 
-     if (question1 === "Correct"){correctAnswers++};
+     if (question1 === "Chocolate Syrup"){correctAnswers++};
 
-     if (question2 === "Correct"){correctAnswers++};
+     if (question2 === "The babysitting and the stranger upstairs"){correctAnswers++};
 
-     if (question3 === "Correct"){correctAnswers++};
+     if (question3 === "Knifes her"){correctAnswers++};
 
-     if (question4 === "Correct"){correctAnswers++};
+     if (question4 === "Jason Vorhees"){correctAnswers++};
 
-     if (question5 === "Correct"){correctAnswers++};
+     if (question5 === "Silence of the Lambs"){correctAnswers++};
 
-     if (question6 === "Correct"){correctAnswers++};
+     if (question6 === "Seven"){correctAnswers++};
 
-     if (question7 === "Correct"){correctAnswers++};
+     if (question7 === "April Fool's Day"){correctAnswers++};
 
-     if (question8 === "Correct"){correctAnswers++};
+     if (question8 === "Boris Karloff"){correctAnswers++};
 
-     if (question9 === "Correct"){correctAnswers++};
+     if (question9 === "Bela Lugosi"){correctAnswers++};
 
-     if (question10 === "Correct"){correctAnswers++};
+     if (question10 === "Rocky Horror Picture Show"){correctAnswers++};
 
 
  	$("#results").html("You got " + correctAnswers + " correct!");
